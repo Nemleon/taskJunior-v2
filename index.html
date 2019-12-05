@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <script type="text/javascript" src="/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+</head>
+<body>
+<nav class="main">
+    <div class="tr">
+        <form action="app.php" method="POST">
+            <h1>The weather in your city today</h1>
+            <p><b>Choose</b> counry and <b>write</b> city:</p>
+            <p><input list="countries" name="countries"> <input type="text" name="city"></p>
+            <datalist id="countries">
+                <option value="ua">Ukraine</option>
+                <option value="ru">Russia</option>
+            </datalist>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="weather" class="weather"></div>
+</nav>
+</body>
+</html>
